@@ -4,6 +4,7 @@ public class WenServices {
 	public void demo()
 	{
 		System.out.println("WenServices.demo()");
+		System.out.println("new updated");
 	}
 
 }
