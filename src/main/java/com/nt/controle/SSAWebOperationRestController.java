@@ -13,7 +13,8 @@ public class SSAWebOperationRestController {
     @GetMapping("//find/{ssn}")
 	public ResponseEntity<?>getStateBySSN(@PathVariable Integer ssn)
 	{
-		
+    	System.out.println("Verified Citizen");
+    	
 		if(String.valueOf(ssn).length()!=9)
 		return new ResponseEntity<String>("invalid ssn",HttpStatus.BAD_REQUEST);
 		int statecode=ssn%100;
@@ -29,6 +30,7 @@ public class SSAWebOperationRestController {
 		else 
 			stateName="invalid ssn";
 		return new ResponseEntity<String>(stateName,HttpStatus.OK);
+		
 		
 	}
 }
