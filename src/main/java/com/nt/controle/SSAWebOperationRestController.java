@@ -13,7 +13,7 @@ public class SSAWebOperationRestController {
     @GetMapping("//find/{ssn}")
 	public ResponseEntity<?>getStateBySSN(@PathVariable Integer ssn)
 	{
-    	
+    	System.out.println(" USA Citixen Verified Successfully");
     	System.out.println(" new branch  created");
     	
 		if(String.valueOf(ssn).length()!=9)
