@@ -14,6 +14,7 @@ public class SSAWebOperationRestController {
 	public ResponseEntity<?>getStateBySSN(@PathVariable Integer ssn)
 	{
     	System.out.println("Verified Citizen");
+    	System.out.println(" new branch  created");
     	
 		if(String.valueOf(ssn).length()!=9)
 		return new ResponseEntity<String>("invalid ssn",HttpStatus.BAD_REQUEST);
